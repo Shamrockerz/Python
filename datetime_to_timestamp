@@ -1,0 +1,11 @@
+#converts a string to datetime format and then timestamp format
+#Import modules
+from datetime import datetime
+from time import time
+#Variables of a date and the syntax for datetime to interpret 
+time_string = "08/01/2011"
+time_format = "%d/%m/%Y"
+#Convert time_string to datetime
+time_datetime = datetime.strptime(time_string, time_format)
+#create timestamp
+time_stamp = time_datetime.timestamp()
